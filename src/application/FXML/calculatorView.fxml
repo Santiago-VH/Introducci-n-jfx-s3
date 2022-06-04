@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="CalculatorGUI">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <TextArea fx:id="textAreaHistorial" layoutX="12.0" layoutY="32.0" prefHeight="346.0" prefWidth="152.0" />
+            <Text fx:id="textHistorial" layoutX="55.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Historial">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="button1" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="115.0" mnemonicParsing="false" onAction="#add1" prefHeight="56.0" prefWidth="57.0" text="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button2" alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="115.0" mnemonicParsing="false" onAction="#add2" prefHeight="56.0" prefWidth="57.0" text="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button3" alignment="CENTER" contentDisplay="CENTER" layoutX="160.0" layoutY="115.0" mnemonicParsing="false" onAction="#add3" prefHeight="56.0" prefWidth="57.0" text="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button4" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="187.0" mnemonicParsing="false" onAction="#add4" prefHeight="56.0" prefWidth="57.0" text="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button5" alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="187.0" mnemonicParsing="false" onAction="#add5" prefHeight="56.0" prefWidth="57.0" text="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button6" alignment="CENTER" contentDisplay="CENTER" layoutX="160.0" layoutY="187.0" mnemonicParsing="false" onAction="#add6" prefHeight="56.0" prefWidth="57.0" text="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button7" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="255.0" mnemonicParsing="false" onAction="#add7" prefHeight="56.0" prefWidth="57.0" text="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button8" alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="255.0" mnemonicParsing="false" onAction="#add8" prefHeight="56.0" prefWidth="57.0" text="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button9" alignment="CENTER" contentDisplay="CENTER" layoutX="160.0" layoutY="255.0" mnemonicParsing="false" onAction="#add9" prefHeight="56.0" prefWidth="57.0" text="9">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button0" alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="326.0" mnemonicParsing="false" onAction="#add0" prefHeight="56.0" prefWidth="57.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonMultiply" alignment="CENTER" contentDisplay="CENTER" layoutX="302.0" layoutY="115.0" mnemonicParsing="false" onAction="#addMult" prefHeight="56.0" prefWidth="57.0" text="*">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonAdd" alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="179.0" mnemonicParsing="false" onAction="#addPlus" prefHeight="56.0" prefWidth="57.0" text="+">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonSubtract" alignment="CENTER" contentDisplay="CENTER" layoutX="345.0" layoutY="179.0" mnemonicParsing="false" onAction="#addMinus" prefHeight="56.0" prefWidth="57.0" text="-">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonCalculate" alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="255.0" mnemonicParsing="false" onAction="#calculate" prefHeight="44.0" prefWidth="138.0" text="Calcular">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textResult" alignment="CENTER" layoutX="256.0" layoutY="326.0" onAction="#Result" prefHeight="44.0" prefWidth="152.0" promptText="Resultado" />
+            <TextField fx:id="textOperation" alignment="CENTER" layoutX="18.0" layoutY="14.0" onAction="#operate" prefHeight="65.0" prefWidth="380.0" promptText="Operación" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
